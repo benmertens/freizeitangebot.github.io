@@ -97,3 +97,32 @@ figure>img,
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Abstand zwischen Bildern */
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.image-grid figure {
+    flex: 1 1 calc(33.333% - 2rem); /* 3 Spalten mit Abstand */
+    max-width: 300px;
+    text-align: center;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* optional, für abgerundete Ecken */
+}
