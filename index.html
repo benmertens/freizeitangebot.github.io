@@ -8,28 +8,95 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script defer src="main.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Leaflet providers-->
+    <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
+
+    <!-- eigene Stile und Hauptskript -->
+    <link rel="stylesheet" href="main.css" />
     <script defer src="main.js"></script>
 </head>
 
+
 <body>
     <header>
-
+        <img src="images/header.jpg" alt="Mountainbike Tirol">
     </header>
-    <article>
-        <main>
-            <h1>Freizeitangebote in Tirol</h1>
-            <h3>Bastian Wilbrandt, Gregory Sprenger, Ben Mertens</h3>
-            <a href="konzept.pdf" target="_blank">Konzept Projektarbeit</a>
-        </main>
-        <a href="./team/index.html">Teamseite</a>
-        <br>
-        <a href="./karte/index.html">zur Karte</a>
-    </article>
+    <main>
+        <article>
+            <h1>Freizeitangebote in Tirol - interaktiv entdecken</h1>
+            <h2>Willkommen auf unserer Projektseite!</h2>
+            <p>Unser Projekt beschäftigt sich mit der Erstellung einer <strong>interaktiven Webkarte</strong>, die sportliche Freizeitangebote im Bundesland Tirol übersichtlich und benutzerfreundlich visualisiert.</p> 
+            <p>Die Anwendung richtet sich an sportlich aktive Menschen - <em>sowohl Einheimische als auch Tourist:innen </em> - die ihre Freizeit in der Tiroler Bergwelt aktiv gestalten möchten.</p>
+            <h3>Was bietet unsere Webanwendung?</h3>
+            <p>Die interaktive Karte zeigt eine Vielzahl sportlicher Freizeitangebote in Tirol und bietet eine <strong>strukturierte Übersicht</strong> über unterschiedliche Sportarten und Trainingsmöglichkeiten. Aktuell werden folgende Angebote dargestellt:</p>
+            <ul>
+                <li>Schwimmanlagen</li>
+                <li>Fußballplätze</li>
+                <li>Tennisplätze</li>
+                <li>Rodelbahnen (Sommer und Winter)</li>
+                <li>Bike-Trails</li>
+            </ul>
+            <p>Alle Angebote sind nach <strong>Sportart kategorisiert</strong> und lassen sich interaktiv erkunden. Beim Klick auf ein Objekt erscheinen in einem Popup-Fenster weitere Informationen, z.B.:</p>
+            <ul>
+                <li>Name</li>
+                <li>Adresse</li>
+                <li>Beschreibung</li>
+                <li>Öffnungszeiten</li>
+            </ul>
+            <p>Für eine bessere Übersicht bei kleinerem Maßstab verwenden wir Cluster-Darstellungen.</p>
+            <h3>Zusatzfunktionen</h3>
+            <p>Um die Benutzererfahrung zu verbessern, enthält unsere Anwendung folgende zusätzliche Features:</p>
+            <ul>
+                <li><strong>Titelbild auf der Startseite</strong> - zur stimmungsvollen Einführung</li>
+                <li><strong>Slideshow mit Bildern</strong> - zur Veranschaulichung sportlicher Aktivitäten in Tirol</li>
+                <li><strong>Statistische Übersicht</strong> - z.B.: <em>In Tirol gibt es 100 Tennisplätze</em></li>
+            </ul>
+            <h3>Ziel des Projekts</h3>
+            <p>Mit unserem Webmapping-Projekt wollen wir eine nützliche digitale Plattform schaffen, die nicht nur Orientierung bietet, sondern auch zur aktiven Freizeitgestaltung inspiriert.</p>
+
+
+
+
+            
+            <a href="https://de.wikipedia.org/wiki/Abel-Tasman-Nationalpark">Quelle: Wikipedia</a>
+            <figure>
+                <img src="images/attraction.jpg" alt="Meer mit einer Berglandschaft">
+                <!--Bild von https://pixabay.com/photos/lake-mountains-trees-water-6003727/-->
+                <figcaption><i class="fa-solid fa-camera-retro"></i> Blick auf Abel Tasman Nationalpark (Quelle: <a href="https://pixabay.com/photos/lake-mountains-trees-water-6003727/">Pixabay</a>)</figcaption>
+            </figure>
+            <h3><i class="fa-solid fa-map-location-dot"></i> Übersichtskarte</h3>
+        
+            <h3> <i class="fa-solid fa-link"></i> Links</h3>
+            <ul>
+                <li><a href="https://de.wikipedia.org/wiki/Abel-Tasman-Nationalpark">Wikipedia Seite</a></li>
+                <li><a href="https://www.bing.com/search?pglt=2083&q=abel+tasman+national+park+wikipedia+deutsch&cvid=03fd26992fcc4b77b97cacc431f8957e&gs_lcrp=EgRlZGdlKgkIABBFGDsY-QcyCQgAEEUYOxj5BzIGCAEQABhAMgYIAhBFGDsyBggDEAAYQDIGCAQQABhAMgYIBRBFGDkyBggGEAAYQDIGCAcQABhAMgYICBBFGDzSAQgyNTExajBqMagCALACAA&FORM=ANNTA1&PC=U531">Google Suche</a></li>
+                <li><a href="https://pixabay.com/">Pixabay Homepage</a></li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="./team/index.html"><i class="fa-solid fa-arrow-left"></i> vorhergehende Etappe</a>
+            <a href="https://freizeitangebot.github.io/freizeitangebot/"><i class="fa-solid fa-house-chimney"></i> diese Etappe</a>
+            <a href="./karte/index.html"> nächste Etappe <i class="fa-solid fa-arrow-right"></i></a>
+        </nav>
+    </footer>
+
 </body>
-
-
-
-
-
 
 </html>
